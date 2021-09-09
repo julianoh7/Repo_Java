@@ -1,5 +1,9 @@
 package HomeWorkPackage;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class HW1 {
     public static void main(String[] args) {
         System.out.println("hw1");
@@ -30,8 +34,29 @@ public class HW1 {
         boolean sunRiseFromTheWest = false;
 
 // 8. initials of your name (^Use: char)
-// My initials : J.H
 
+      char myInitial = 'J';
+
+        System.out.println(hourReturnMethod(4));
+        /**
+         * Question:
+         * Create a method that will take an int as input.
+         * Return the timeline (hour am/pm) with 2 hours interval from the current hour
+         *
+         */
+
+    }
+    public static Date hourReturnMethod(int arr) {
+        Date time= new Date();
+        SimpleDateFormat df = new SimpleDateFormat("hh:mm:ss a");
+        String currentTime =df.format(time);
+        //Integer timeInteger = Integer.valueOf(currentTime);
+
+
+        System.out.println("-----" +currentTime);
+        return time;
+
+    }
 
 
 }
