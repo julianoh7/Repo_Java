@@ -21,11 +21,11 @@ public class HW11 {
  *
  */
 public static void main(String[] args) {
-    String[] Array1 = {"happy", "King" , "HAPPY", "PEACE"};
+    String[] Array1 = {"happy", "King", "HAPPY", "PEACE"};
     String[] Array2 = {"king", "Peace", "happiness", "connection", "learn"};
-    for(int i = 0; i < Array1.length; i++){
-        for(int a = 0; a < Array2.length; a++){
-            if(Array1[i].equalsIgnoreCase(Array2[a])){
+    for (int i = 0; i < Array1.length; i++) {
+        for (int a = 0; a < Array2.length; a++) {
+            if (Array1[i].equalsIgnoreCase(Array2[a])) {
                 System.out.println("The common values between the two given arrays are : " + Array1[i]);
                 break;
             }
@@ -91,7 +91,9 @@ public static void main(String[] args) {
         }
     }
 
-
+    String[] Array11 = {"happy", "King" , "HAPPY", "PEACE"};
+    String[] Array22 = {"king", "Peace", "happiness", "connection", "learn"};
+    System.out.println(MyArrayMethods.findCommons(Array11,Array22));
 
 
     char myInitial = 'J';

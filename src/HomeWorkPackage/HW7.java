@@ -18,7 +18,7 @@ public class HW7 {
          * racecar --> racecar      (palindrome)
          */
         //(level,eye,head,racecar)
-        String sentence = "level";
+        String sentence = "mouse";
         String task1Word = "";
         for (int i = sentence.length()-1; i>=0; i--) {
             task1Word += sentence.charAt(i);
@@ -100,11 +100,8 @@ public class HW7 {
 
                 }
             }
-
-            System.out.println(count);
-
         }
-        
+        System.out.println(count);
 
         char myInitial = 'J';
 

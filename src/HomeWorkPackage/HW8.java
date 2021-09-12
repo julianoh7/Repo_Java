@@ -38,6 +38,7 @@ public class HW8 {
          * max : 67
          */
         maxValue();
+
     }
 
 public static void calculateString() {
@@ -51,13 +52,14 @@ public static void calculateString() {
         System.out.println("The correct form to write : " + sentence + " is --> " + result);
     }
 }
-public static void reverseString(){
+public static String reverseString(){
         String sen3 = "happy holidays";
         String task3String = "";
         for (int b = sen3.length()-1; b>=0; b--) {
             task3String += sen3.charAt(b);
-            System.out.println(task3String);
+            //System.out.println(task3String);
         }
+        return task3String;
     }
 public static void palindromeMethod (){
     String sentence = "level";
@@ -79,7 +81,7 @@ public static void palindromeMethod (){
     }
 }
 public static void averageReturn(){
-    int values[] = {7, 10, 3, 6, 10};
+    int values[] = {10,10,10};
     int sum = 0;
     for (int z = 0; z < values.length; z++)
         sum = sum + values[z] / values.length;

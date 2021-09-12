@@ -72,7 +72,7 @@ public class HW6 {
         int studentScore = 86;
         String Grade = "";
         String yesOrNo = "";
-        double percentage = (studentScore*100.00)/maxScore;
+        double percentage = (studentScore * 100.00) / maxScore;
         if (percentage >= 91 && percentage <= 100) {
             Grade = "A";
         } else if (percentage >= 81 && percentage <= 90.99) {
@@ -85,7 +85,8 @@ public class HW6 {
             Grade = "E";
         } else if (percentage <= 50.99) {
             Grade = "F";
-        }if (percentage >= 91)
+        }
+        if (percentage >= 91)
             yesOrNo = "Full Scholarship";
         else if (percentage >= 71 && percentage <= 90.99)
             yesOrNo = "Half Scholarship";
@@ -107,11 +108,13 @@ public class HW6 {
          *
          */
         {
-            int values[] = {10, 20, 30, 40, 50};
+            int[] values = {10, 10, 10};
             int sum = 0;
-            for (int z = 0; z < values.length; z++)
-                sum = sum + values[z]/ values.length;
+            for (int z = 0; z < values.length; z++){
+                sum = sum + values[z] / values.length;
+            }
             System.out.println("The average of the numbers in the array are : " + sum);
+
 
         }
         System.out.println("\n");
@@ -129,18 +132,17 @@ public class HW6 {
         String[] namess = {"john", "happy", "peACe", "jOy", "lui", "harry"};
         String nameToSearch = "faith";
         System.out.println(Arrays.toString(namess));
-        for (int q=0 ; q < namess.length ; q++)
+        for (int q = 0; q < namess.length; q++)
             if (namess[q].contains("faith")) {
                 System.out.println("LUI");
-            }else  {
+            } else {
                 System.out.println("king is not present in the array");
             }
 
 
+
+
         System.out.println("\n");
-
-
-
 
 
         /**
@@ -149,32 +151,48 @@ public class HW6 {
          * print the names from array if the name-length is >=5 and name contains 'o' or 'O'
          */
         String[] names = {"john", "happy", "peACe", "jOy", "LEarN", "Orange", "king kong", "iRON MAN"};
+        System.out.println(Arrays.toString(names));
         for (int i = 0; i < names.length; i++)
             if (names[i].toLowerCase().contains("o"))
                 System.out.println("The names containing 'o' are : " + names[i]);
-            ;
-            }
+
+
+
+    }
+
+
+    /**
+     * int[] numbers = {11, 22, 33, 44, 55, 98, 65};
+     * String[] names = {"john", "happy", "peACe", "jOy", "LEarN", "joy", "laugh"};
+     * <p>
+     * Limitation: both array must be of same length
+     * <p>
+     * if the numbers-array has 33 in it,
+     * print the index at which 33 is present in numbers array
+     * And, print the name present at same index in names array.
+     */
+    int[] numbersss = {11, 22, 33, 44, 55, 98, 65};
+    String[] namesss = {"john", "happy", "peACe", "jOy", "LEarN", "joy", "laugh"}; {
+        for (int a = 0; a < numbersss.length; a++){
+            if(numbersss[a] == 33)
+                System.out.println(a);
+
+          //  int[] numbers = {11, 22, 33, 44, 55, 98, 65};
+           // String[] names = {"john", "happy", "peACe", "jOy", "LEarN", "joy", "laugh"};
+           // for (int i=0;i< numbers.length;i++){                                                          CORRECT WAY
+             //   if (numbers[i]==33){
+              //      System.out.println(i);
+               //     System.out.println(names[i].toUpperCase());
+              //  }
+           // }
+
+    }
+    }
 
 
 
 
-        /**
-         * int[] numbers = {11, 22, 33, 44, 55, 98, 65};
-         * String[] names = {"john", "happy", "peACe", "jOy", "LEarN", "joy", "laugh"};
-         *
-         * Limitation: both array must be of same length
-         *
-         * if the numbers-array has 33 in it,
-         *      print the index at which 33 is present in numbers array
-         *      And, print the name present at same index in names array.
-         *
-           */
-        //int[] numberz = {11, 22, 33, 44, 55, 98, 65};
-       // String[] namez = {"john", "happy", "peACe", "jOy", "LEarN", "joy", "laugh"};
-        //int numberzArray = numberz.length;
-        //int namezArray = namez.length;
 
-    // (been trying to solve this for past two days and can't figure it out, Sorry)
         ;
 
     char myInitial = 'J';

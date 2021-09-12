@@ -12,18 +12,20 @@ public class HW3 {
          String sentence_1 = "hello dear, how are you?";
          int sentence_1length = sentence_1.length();
          System.out.println("Length of : '" + sentence_1 + "' is -> " + sentence_1length);
-         int result_1 = sentence_1length >10?100:15;
-         System.out.println("Result is :" + result_1);
+         int result_1 = sentence_1length >=10?100:15;
+         System.out.println("Result is :" + result_1 + '\n');
+         ;
 
          /**Question - 2
           * replace all 'R/r' with 'F'
           */
-        String sentence_2 = "We all ARe GOod ProgrAMmer";
+        String sentence_2 ="We all ARe GOod ProgrAMmer";
         sentence_2 = sentence_2.toLowerCase();
-        System.out.println(" Sentence 2 : " +sentence_2);
+        System.out.println("Sentence 2 : " +sentence_2);
         String sentenceAfterReplacement = sentence_2.replace("r", "F");
-        System.out.println(sentenceAfterReplacement);
+        System.out.println("Result is : " + sentenceAfterReplacement + '\n');
 
+        ;
         // Question - 3
         /**
          * 1. Display/Print length of your sentence_3
@@ -37,12 +39,16 @@ public class HW3 {
 
         int sentence_3Length = sentence_3.length();
         System.out.println("Length of : '" + sentence_3 + "' is -> " + sentence_3Length);
-        boolean itStartsWith_A = sentence_3.startsWith("A");
-        System.out.println("it '" + sentence_3 + "' starts with 'A' -> " + itStartsWith_A);
-        boolean itEndsWith_K = sentence_3.endsWith("K");
-        System.out.println("it '" + sentence_3 + "' ends with 'K' -> " + itEndsWith_K );
-        String result_3 ="Media";
-        System.out.println("Result is : "+ "Media");
+        boolean itStartsWith_A = sentence_3.toLowerCase().startsWith("a");
+        System.out.println("Does '" + sentence_3 + "' starts with 'A' -> " + itStartsWith_A);
+        boolean itEndsWith_K = sentence_3.toUpperCase().endsWith("K");
+        System.out.println("Does '" + sentence_3 + "' ends with 'K' -> " + itEndsWith_K );
+        String result_3 = sentence_3.toLowerCase().startsWith("a") ? "Media":"Entertainment";
+        System.out.println("Result is : "+ result_3 + '\n');
+
+        char myInitial = 'J';
+
+
 
 
 
