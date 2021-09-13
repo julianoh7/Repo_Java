@@ -21,8 +21,18 @@ public class HW13 {
         }
         return timeline;
 
+<<<<<<< HEAD
     }
 
+=======
+        System.out.println(hourReturnMethod());
+        /**
+         * Question:
+         * Create a method that will take an int as input.
+         * Return the timeline (hour am/pm) with 2 hours interval from the current hour
+         *
+         */
+>>>>>>> main
 
     public static void main(String[] args) {
         System.out.println(generateTimeLine(5));
