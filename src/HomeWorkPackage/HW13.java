@@ -25,7 +25,6 @@ public class HW13 {
     public static void main(String[] args) {
 
         System.out.println(hourReturnMethod());
-
         /**
          * Question:
          * Create a method that will take an int as input.
