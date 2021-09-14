@@ -23,7 +23,7 @@ public class midterm {
  *      user speed = 178 ; 21 points (License suspended).
  *      user speed = 70 ; Thank you for driving within the speed limit.
  */
-        int driverSpeed = 155;
+        int driverSpeed = 200;
         int maxSpeed = 300;
         String points = "";
 

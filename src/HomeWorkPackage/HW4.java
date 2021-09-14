@@ -1,6 +1,7 @@
 package HomeWorkPackage;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Locale;
 
 public class HW4 {
@@ -49,12 +50,53 @@ public class HW4 {
         System.out.println(Arrays.toString(sentence_3Split));
         int sentence_3Length = sentence_3Split.length;
         System.out.println("The number of words in the sentence is : " + sentence_3Length);
-        
+
+        char myInitial = 'J';
 
 
 
+        int[] lol = {1,7,9,25,32,57,69};
+       double avg= MyArrayMethods.averageReturnMethod(lol);
+        System.out.println(avg);
+
+       String aaa= MyStringMethods.abbreviation("happy holidays");
+        System.out.println(aaa);
 
 
+      MyStringMethods.convertString("HELLO and gOoDBye");
+
+
+
+        String mm = MyStringMethods.reverseString("hello friend");
+        System.out.println(mm);
+
+
+        String nnn = "happy";
+        int ff=100;
+        System.out.println(nnn.toUpperCase().charAt(4));
+
+
+        try{
+            System.out.println(nnn.toUpperCase().charAt(ff));
+
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("Incorrect index given");
+            e.printStackTrace();
+            try {
+                Thread.sleep(2000);
+                System.out.println("Checkfile");
+            }catch (InterruptedException sl) {
+                sl.printStackTrace();
+                System.out.println("sleep");
+            }
+        }finally {
+            System.out.println("in the finally block");
+        }
+
+        System.out.println("outside the try catch block");
+
+
+        ////CONTACTORS
 
 
 
@@ -65,7 +107,9 @@ public class HW4 {
 
 
     }
-
+    public HW4(){
+        System.out.println("Constructor method");
+    }
 
 
 

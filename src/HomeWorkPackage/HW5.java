@@ -19,7 +19,7 @@ public class HW5 {
 
         if (studentScore >= 100) {
             System.out.println("Grade A");
-        } else if (studentScore <= 90.99) {
+        } else if (studentScore < 90.99) {
             System.out.println("Grade is B");
         } else if (studentScore < 80.99) {
             System.out.println("Grade is C");
@@ -48,7 +48,7 @@ public class HW5 {
          * if number is divisible by 3 and 5, print "divisible by both"
          * if not divisible by 3 or 5, print the number
          */
-        
+
         int num = 30;
         if (num%3 == 0 && num%5 == 0) {
             System.out.println("divisible by both");
@@ -57,11 +57,10 @@ public class HW5 {
         } else if (num%5 ==0) {
             System.out.println("divisible by five");
         } else {
-            System.out.println("number");
+            System.out.println(num);
         }
 
-
-
+        char myInitial = 'J';
 
 
 
